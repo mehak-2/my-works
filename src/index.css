@@ -1,0 +1,223 @@
+.navbar
+{
+  height: 50px;
+  padding: 15px;
+  width: 100%;
+  background-color: lightsteelblue;
+}
+
+.main{
+  padding: 10px;
+  font-size: 1.3rem;
+  background-color: lightcoral;
+}
+
+.team
+{
+   padding: 10px;
+  font-size: 1.3rem;
+  background-color: black;
+
+}
+
+.about
+{
+   padding: 10px;
+  font-size: 1.3rem;
+  background-color: lightgreen;
+}
+
+.foot{
+  bottom: 0;
+  position: sticky;
+  background-color: pink;
+}
+
+ul,.flex{
+  display: flex;
+  list-style: none;
+  text-align: center;
+}
+
+li,a{
+  /* margin-left: 2rem; */
+  list-style: none;
+  text-decoration: none;
+  background-color: aliceblue;
+  text-align: center;
+  align-items: center;
+  padding: 5px 15px;
+}
+
+li:hover{
+  background-color: lightblue;
+  color: white;
+  transition: all 0.3s;
+}
+li:active
+{
+  background-color: lightcoral;
+}
+
+.card
+{
+  margin-top: 10px;
+  width:400px ;
+  height: 200px;
+  color: white;
+  padding: 15px;
+  background-color: black;
+  margin-left: 20px;
+  border: 2px solid royalblue;
+  
+}
+
+.gap{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 5px;
+  row-gap: 5px;
+  margin-top: 2rem;
+}
+
+/*about page styling*/
+.header{
+  margin-top: 10px;
+  width:150px ;
+  margin-left: 600px;
+  border: 2px solid royalblue;
+  color: white;
+  padding: 15px;
+  background-color: black;
+}
+.about {
+  margin-top: 10px;
+  width: 500px;
+  align-items: center; /* Vertically center the content */
+  border: 2px solid royalblue;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  height: 600px;
+}
+
+.content-row {
+  display: flex;
+  flex-direction: row; /* Display image and text side by side */
+  align-items: center; /* Vertically center the content */
+  width: 100%;
+}
+
+.img {
+  width: 500px; /* Set the width of the image */
+  height: 800px; /* Maintain aspect ratio */
+  margin-right: 60px; 
+  margin-left: 60px; /* Add some spacing between the image and text */
+}
+
+/*event page styling*/
+
+div.gallery {
+  margin: 20px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 250px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.img1{
+  width: "600";
+  height: "400";
+}
+
+.eventhead{
+  margin-top: 10px;
+  width:300px ;
+  margin-left: 600px;
+  border: 2px solid royalblue;
+  color: white;
+  padding: 15px;
+  background-color: black;
+}
+
+/* CertificateCard.css */
+.card1 {
+  width: 300px;
+  margin: 10px;
+  border: 1px solid black;
+  box-shadow: 0 2px 4px black;
+  padding: 10px;
+  text-align: center;
+  background-color: lightgray;
+}
+
+.card1 img {
+  max-width: 300px;
+  height: 200px;
+}
+
+.card1 a {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  background-color: #0074D9;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+.gap2 {
+  margin-top: 2rem;
+}
+
+.certificatehead{
+  margin-top: 10px;
+  width:300px ;
+  margin-left: 600px;
+  border: 2px solid royalblue;
+  color: white;
+  padding: 15px;
+  background-color: black;
+}
+
+.box{
+  width: 200px;
+  margin: 10px;
+  border: 1px solid black;
+  box-shadow: 0 2px 4px black;
+  padding: 10px;
+  text-align: center;
+  background-color: lightgray;
+}
+
+.gap3{
+  display:grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  column-gap: 5px;
+  row-gap: 5px;
+  margin-top: 2rem;
+}
+
+.skillhead{
+  margin-top: 10px;
+  width:300px ;
+  margin-left: 600px;
+  
+  color: black;
+  padding: 15px;
+  
+}
