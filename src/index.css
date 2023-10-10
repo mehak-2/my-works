@@ -1,45 +1,48 @@
-.navbar
-{
+* {
+  margin: 0;
+}
+
+.navbar {
   height: 50px;
   padding: 15px;
+  margin: 0;
   width: 100%;
-  background-color: lightsteelblue;
+  background-color: #b0c4de;
 }
 
-.main{
+.main {
   padding: 10px;
   font-size: 1.3rem;
-  background-color: lightcoral;
+  background-color: #f08080;
 }
 
-.team
-{
-   padding: 10px;
+.team {
+  padding: 10px;
   font-size: 1.3rem;
   background-color: black;
-
 }
 
-.about
-{
-   padding: 10px;
+.about {
+  padding: 10px;
   font-size: 1.3rem;
   background-color: lightgreen;
 }
 
-.foot{
+.foot {
   bottom: 0;
   position: sticky;
   background-color: pink;
 }
 
-ul,.flex{
+ul,
+.flex {
   display: flex;
   list-style: none;
   text-align: center;
 }
 
-li,a{
+li,
+a {
   /* margin-left: 2rem; */
   list-style: none;
   text-decoration: none;
@@ -49,31 +52,46 @@ li,a{
   padding: 5px 15px;
 }
 
-li:hover{
+li:hover {
   background-color: lightblue;
   color: white;
   transition: all 0.3s;
 }
-li:active
-{
+li:active {
   background-color: lightcoral;
 }
 
-.card
-{
+.card {
   margin-top: 10px;
-  width:400px ;
+  width: 400px;
   height: 200px;
   color: white;
   padding: 15px;
-  background-color: black;
+  background-color: lightblue;
   margin-left: 20px;
-  border: 2px solid royalblue;
-  
+  /* border: 2px solid royalblue; */
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+}
+.card1 {
+  width: 300px;
+  margin: 10px;
+  cursor: pointer;
+
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+  padding: 10px;
+  text-align: center;
+  background-color: lightblue;
+}
+.card:hover,
+.card1:hover {
+  box-shadow: 0 14px 50px #f08080, 0 10px 50px #f08080;
+  transition: all 0.3s;
 }
 
-.gap{
-  display:grid;
+.gap {
+  display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   column-gap: 5px;
   row-gap: 5px;
@@ -81,23 +99,27 @@ li:active
 }
 
 /*about page styling*/
-.header{
+.header {
   margin-top: 10px;
-  width:150px ;
-  margin-left: 600px;
-  border: 2px solid royalblue;
+  width: 250px;
+  text-align: center;
+  margin-left: 500px;
+  /* border: 2px solid royalblue; */
   color: white;
-  padding: 15px;
-  background-color: black;
+  padding: 5px 15px;
+  margin-bottom: 2rem;
+  background-color: lightcoral;
 }
 .about {
-  margin-top: 10px;
+  margin-top: 33px;
+  position: absolute;
+  margin-left: 700px;
   width: 500px;
   align-items: center; /* Vertically center the content */
-  border: 2px solid royalblue;
+  /* border: 2px solid royalblue; */
   color: white;
-  background-color: black;
-  padding: 10px;
+  background-color: lightblue;
+  padding: 20px;
   height: 600px;
 }
 
@@ -110,8 +132,8 @@ li:active
 
 .img {
   width: 500px; /* Set the width of the image */
-  height: 800px; /* Maintain aspect ratio */
-  margin-right: 60px; 
+  height: 600px; /* Maintain aspect ratio */
+  margin-right: 60px;
   margin-left: 60px; /* Add some spacing between the image and text */
 }
 
@@ -138,31 +160,14 @@ div.desc {
   text-align: center;
 }
 
-.img1{
+.img1 {
   width: "600";
   height: "400";
 }
 
-.eventhead{
-  margin-top: 10px;
-  width:300px ;
-  margin-left: 600px;
-  border: 2px solid royalblue;
-  color: white;
-  padding: 15px;
-  background-color: black;
-}
+
 
 /* CertificateCard.css */
-.card1 {
-  width: 300px;
-  margin: 10px;
-  border: 1px solid black;
-  box-shadow: 0 2px 4px black;
-  padding: 10px;
-  text-align: center;
-  background-color: lightgray;
-}
 
 .card1 img {
   max-width: 300px;
@@ -173,7 +178,7 @@ div.desc {
   display: block;
   margin-top: 10px;
   text-decoration: none;
-  background-color: #0074D9;
+  background-color: #0074d9;
   color: #fff;
   padding: 8px 16px;
   border-radius: 2px;
@@ -184,40 +189,112 @@ div.desc {
   margin-top: 2rem;
 }
 
-.certificatehead{
-  margin-top: 10px;
-  width:300px ;
-  margin-left: 600px;
-  border: 2px solid royalblue;
-  color: white;
-  padding: 15px;
-  background-color: black;
-}
 
-.box{
+
+.box {
   width: 200px;
   margin: 10px;
-  border: 1px solid black;
-  box-shadow: 0 2px 4px black;
+  border: none;
+  box-shadow: 0 2px 15px #f08080;
   padding: 10px;
   text-align: center;
-  background-color: lightgray;
+  background-color: lightblue;
+  color: white;
 }
 
-.gap3{
-  display:grid;
+.gap3 {
+  display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   column-gap: 5px;
   row-gap: 5px;
   margin-top: 2rem;
 }
 
-.skillhead{
+.skillhead {
   margin-top: 10px;
-  width:300px ;
+  width: 300px;
   margin-left: 600px;
-  
+
   color: black;
   padding: 15px;
-  
+}
+
+.active-links {
+  background-color: lightcoral;
+}
+
+.svg {
+  float: right;
+  margin-top: 6rem;
+  margin-right: 9rem;
+}
+
+.intro-title {
+  margin-top: 8rem;
+  margin-left: 4rem;
+  color: lightblue;
+  font-size: 5rem;
+  font-weight: 100;
+  position: absolute;
+}
+
+span {
+  color: #f08080;
+}
+
+.github-main {
+  margin-top: 18rem;
+  margin-left: 4rem;
+  position: absolute;
+  padding: 15px 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: none;
+  background-color: lightblue;
+  cursor: pointer;
+  color: white;
+}
+
+.github-main:hover {
+  background-color: #f08080;
+}
+.git-btn {
+  margin-top: 1rem;
+  padding: 5px;
+  border: none;
+  background-color: lightblue !important;
+  cursor: pointer;
+  color: red;
+}
+
+.git-btn:hover {
+  background-color: #f08080;
+}
+
+.certi {
+  margin-left: 5rem;
+}
+
+.certificatehead {
+  margin-top: 10px;
+  text-align: center;
+  width: 300px;
+  font-size: 1.2rem;
+  margin-left: 600px;
+  border: none;
+  color: white;
+  padding: 15px;
+  background-color: lightcoral;
+}
+
+.eventhead {
+ margin-top: 10px;
+  text-align: center;
+  width: 500px;
+  font-size: 1.2rem;
+  margin-left: 600px;
+  border: none;
+  color: white;
+  padding: 15px;
+  background-color: lightcoral;
 }
