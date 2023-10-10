@@ -3,7 +3,7 @@ import React from 'react';
 const About = () => {
   return (
     <div className="about-section">
-      <h1 className='header'>About ME</h1>
+      <h1 className='header'>About Me</h1>
       <div className="content-column">
         <div className="content-row">
           <img className='img' src={require('./profile.jpg')} alt="mehak" />

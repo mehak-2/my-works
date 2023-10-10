@@ -1,9 +1,9 @@
 import React from "react";
 
-const Team = () => {
+const Skills = () => {
   return (
     <div>
-      <h1 className="skillhead">"Skill Set"</h1>
+      <h1 className="certificatehead">Skill Set</h1>
       <section className="skill-section">
         <div className="row gap3">
           <div className="box">
@@ -24,11 +24,10 @@ const Team = () => {
           <div className="box">
             <h4>SQL</h4>
           </div>
-         
         </div>
       </section>
     </div>
   );
 };
 
-export default Team
+export default Skills;

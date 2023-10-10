@@ -9,8 +9,8 @@ import c4 from "./c4.jpeg";
 const Certificate = (props) => {
   return (
     <div>
-    <h1 classname="certificatehead">"Achievement Showcase"</h1>
-    <div className='flex gap2'>
+    <p className="certificatehead">Achievement Showcase</p>
+    <div className='flex gap2 certi'>
     
       <CertificateCard name="Meta Participation Certificate" img={c1} dlink="URL_1" />
       <CertificateCard name="Udemy Certificate" img={c2} dlink="URL_2" />

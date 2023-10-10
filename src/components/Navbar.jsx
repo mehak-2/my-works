@@ -1,32 +1,60 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
+import { AiOutlineHome } from "react-icons/ai";
 
 const Navbar = () => {
   return (
-    <div className="navbar">
+    <div className="navbar mt-0">
       <ul>
-        <Link to="/main">
+        <NavLink
+          className={({ isActive }) => (isActive ? "active-links" : " ")}
+          to="/"
+        >
+          <li>
+            <AiOutlineHome />
+          </li>
+        </NavLink>
+        <NavLink
+          className={({ isActive }) => (isActive ? "active-links" : " ")}
+          to="/frontend"
+        >
           <li>Frontend Projects</li>
-        </Link>
-        <Link to="/home">
+        </NavLink>
+        <NavLink
+          className={({ isActive }) => (isActive ? "active-links" : " ")}
+          to="/backend"
+        >
           <li>Backend Projects</li>
-        </Link>
-        <Link to="/about">
+        </NavLink>
+        <NavLink
+          className={({ isActive }) => (isActive ? "active-links" : " ")}
+          to="/about"
+        >
           <li>About me</li>
-        </Link>
-        <Link to="/team">
+        </NavLink>
+        <NavLink
+          className={({ isActive }) => (isActive ? "active-links" : " ")}
+          to="/skills"
+        >
           <li>Skills</li>
-        </Link>
-        <Link to="/event">
+        </NavLink>
+        <NavLink
+          className={({ isActive }) => (isActive ? "active-links" : " ")}
+          to="/event"
+        >
           <li>Events</li>
-        </Link>
-        <Link to="/certificate">
+        </NavLink>
+        <NavLink
+          className={({ isActive }) => (isActive ? "active-links" : " ")}
+          to="/certificate"
+        >
           <li>Achievements</li>
-        </Link>
+        </NavLink>
       </ul>
     </div>
   );
 };
 
-export default Navbar
+export default Navbar;

@@ -5,7 +5,7 @@ const Card = (props) => {
     <div className='card'>
       <h1>{props.pname}</h1>
       <h3>{props.desc}</h3>
-      <h4>{props.button}</h4>
+      <button className='git-btn'>{props.button}</button>
       </div>
   );
 };
