@@ -1,12 +1,14 @@
-import React from 'react';
-
+import { motion } from "framer-motion";
+import React from "react";
 
 const CertificateCard = (props) => {
   return (
-    
-    
-    <div className="card1"> 
-    
+    <motion.div
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transtion={{ type: "spring", stiffness: 300 }}
+      className="card1"
+    >
       <div className="w3-card-4">
         <div className="w3-container">
           <img src={props.img} alt="Avatar" />
@@ -16,9 +18,8 @@ const CertificateCard = (props) => {
           </div>
         </div>
       </div>
-    
-    </div>
+    </motion.div>
   );
 };
 
-export default CertificateCard
+export default CertificateCard;

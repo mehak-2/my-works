@@ -1,11 +1,30 @@
+import { motion } from "framer-motion";
 import React from "react";
 
 const Skills = () => {
   return (
     <div>
-      <h1 className="certificatehead">Skill Set</h1>
+      <motion.h1
+        initial={{ y: -250, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transtion={{
+          type: "spring",
+          stiffness: 500,
+          ease: "linear",
+          dealy: 2,
+          duration: 3,
+        }}
+        className="certificatehead"
+      >
+        Skill Set
+      </motion.h1>
       <section className="skill-section">
-        <div className="row gap3">
+        <motion.div
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transtion={{ type: "spring", stiffness: 700 }}
+          className="row gap3"
+        >
           <div className="box">
             <h4>HTML</h4>
           </div>
@@ -24,7 +43,7 @@ const Skills = () => {
           <div className="box">
             <h4>SQL</h4>
           </div>
-        </div>
+        </motion.div>
       </section>
     </div>
   );
