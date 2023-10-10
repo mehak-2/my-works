@@ -1,9 +1,9 @@
-import React from 'react';
-import Card from './Card';
+import React from "react";
+import Card from "./Card";
 
 const Frontend = () => {
   return (
-    <div className="flex gap">
+    <div className="flex gap frontend">
       <Card
         pname="Personal Portfolio Page"
         desc="HTML CSS JS"
@@ -16,11 +16,11 @@ const Frontend = () => {
         desc="HTML CSS JS"
         button={<a href="https://github.com/mehak-2/Todo--react-js">Github</a>}
       />
-      <Card
+      {/* <Card
         pname="OTP Screen UI"
         desc="HTML CSS JS"
         button={<a href="https://github.com/mehak-2/OTP-screen-UI">Github</a>}
-      />
+      /> */}
       <Card
         pname="Race moto Game"
         desc="HTML CSS JS"
@@ -48,6 +48,5 @@ const Frontend = () => {
     </div>
   );
 };
-
 
 export default Frontend;

@@ -62,7 +62,7 @@ li:active {
 }
 
 .card {
-  margin-top: 10px;
+  margin-top: 50px;
   width: 400px;
   height: 200px;
   color: white;
@@ -165,8 +165,6 @@ div.desc {
   height: "400";
 }
 
-
-
 /* CertificateCard.css */
 
 .card1 img {
@@ -188,8 +186,6 @@ div.desc {
 .gap2 {
   margin-top: 2rem;
 }
-
-
 
 .box {
   width: 200px;
@@ -288,7 +284,7 @@ span {
 }
 
 .eventhead {
- margin-top: 10px;
+  margin-top: 10px;
   text-align: center;
   width: 500px;
   font-size: 1.2rem;
